@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 7975d4d933033e94aba2c6e0f2ca06c1
+  - enabled: 1
+    path: Assets/Scenes/tutorial.unity
+    guid: 3595dfaafa7c01e43ad6315f6e855d18
+  - enabled: 1
+    path: Assets/Scenes/tutorial2.unity
+    guid: 3027315f52c075e4bb04a4d41ca18025
+  - enabled: 1
+    path: Assets/Scenes/boxstage.unity
+    guid: 9df7e95b93a6385488d04e9c76ed21c0
+  - enabled: 1
+    path: Assets/Scenes/Stage.unity
+    guid: ca79033a9a0d10a4e9b81484007265af
+  - enabled: 1
+    path: Assets/Scenes/mitustage.unity
+    guid: a74bbe7218669644c84a60ddeb287399
+  - enabled: 1
+    path: Assets/Scenes/matistage.unity
+    guid: aa7ece2d5c9a65542b8d20a99660f3d3
+  - enabled: 1
+    path: Assets/Scenes/piano.unity
+    guid: a2cc023264d3b8d4db8745d8e675d3d5
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: bed559772b2048b49b2bc65fcd1b0328
+  - enabled: 1
+    path: Assets/Scenes/yuriko.unity
+    guid: 62dc3180db5210f43bb11bf8e609f87b
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: e5d873df8f221474283e0d110b61f6cf
+  - enabled: 1
+    path: Assets/Scenes/asobikata.unity
+    guid: 08de2cf0bc19d6d4384a8148d7b22709
+  m_configObjects: {}
