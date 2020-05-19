@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject Canvas;
     private bool cleard=false;
     public int RisetCount = 0;
+    public bool isTutorial = false;
     private void Start()
     {
         Max = GameObject.Find("Goal").GetComponent<Block>().mit;
@@ -67,6 +68,8 @@ public class GameManager : MonoBehaviour
 
     public void clear()
     {
+        StartCoroutine("canvastrue");
+        if (isTutorial) return;
         int now = SceneManager.GetActiveScene().buildIndex;
         if (now > PlayerPrefs.GetInt("clear"))
         {
@@ -74,7 +77,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("clear", now);
             PlayerPrefs.Save();
         }
-        StartCoroutine("canvastrue");
     }
 
     IEnumerator canvastrue()
@@ -86,6 +88,7 @@ public class GameManager : MonoBehaviour
 
     public void NextStage()
     {
+        if (isTutorial) return;
         int now = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(now + 1);
     }

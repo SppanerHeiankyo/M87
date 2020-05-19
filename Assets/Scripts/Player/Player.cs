@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
         GM = GameObject.Find("GameManager").GetComponent<GameManager>();
         c = 1f / GM.Max;
         AS = GetComponentInChildren<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -192,4 +193,6 @@ public class Player : MonoBehaviour
         }
         GM.clear();
     }
+
+    
 }

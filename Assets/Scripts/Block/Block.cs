@@ -26,10 +26,11 @@ public class Block : MonoBehaviour
     public IEnumerator kyusyu()
     {
         Destroy(this.GetComponent<Collider2D>());
+        this.sprite.sortingOrder = 100;
         for (int i = 60; i != 0; i--)
         {
             transform.localScale *= 0.95f;
-            yield return null;
+            yield return new WaitForFixedUpdate();
         }
         Destroy(this.gameObject);
         yield return null;

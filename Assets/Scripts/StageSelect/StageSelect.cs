@@ -17,7 +17,8 @@ public class StageSelect : MonoBehaviour
             PlayerPrefs.SetInt("clear", 0);
             PlayerPrefs.Save();
         }
-        if (PlayerPrefs.GetInt("clear") == 9) PlayerPrefs.SetInt("clear", 8);
+        if (PlayerPrefs.GetInt("clear") > 8) PlayerPrefs.SetInt("clear", 8);
+        PlayerPrefs.Save();
         for(int i=0; i <= PlayerPrefs.GetInt("clear");i++)
         {
             btn_canvas.GetChild(i).GetComponent<Image>().sprite = stage_images[i];
@@ -48,7 +49,7 @@ public class StageSelect : MonoBehaviour
             {
                 t.position -= new Vector3(right?Screen.width / 10:-Screen.width/10, 0, 0);
             }
-            yield return null;
+            yield return new WaitForFixedUpdate();
         }
     }
     public void OnClick()
